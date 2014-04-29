@@ -1,6 +1,6 @@
 #TMCharly.github.io
 
-Come [here](http://tmcharly.github.io) to show us yours TM's creations!
+Come [here](http://tmcharly.github.io) to you show our TM creations!
 
 ![](http://tmcharly.github.io/img/favicon.png)
 
