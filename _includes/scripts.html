@@ -1,0 +1,26 @@
+    {% if page.title != 'Chat' %}
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="zoombox/zoombox.js"></script>
+    <script type="text/javascript">
+            jQuery(function($){
+            $(document).foundation();
+            $('a.zoombox').zoombox({
+                theme       : 'simple',        //available themes : zoombox,lightbox, prettyphoto, darkprettyphoto, simple
+                opacity     : 0.8,              // Black overlay opacity
+                animation   : true,             // Do we have to animate the box ?
+                gallery     : true,             // Allow gallery thumb view
+                autoplay : true               // Autoplay for video
+            });
+        });
+    </script>
+    {% endif %}
+    {% if page.title == 'Chat' %}
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script>
+     jQuery(function($){
+      $(document).foundation();
+    });
+    </script>
+    {% endif %}
