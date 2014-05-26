@@ -1,0 +1,17 @@
+            <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">TMCharly</a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+          
+            <section class="top-bar-section">
+              <nav>
+            		<li {% if page.url == '/' %}class="active"{% endif %}><a href="index.html">Français</a></li>
+            		<li {% if page.url contains 'english' %}class="active"{% endif %}><a href="english.html">English</a></li>
+            		<li {% if page.url contains 'chat' %}class="active"{% endif %}><a href="chat.html">Chat</a></li>
+              </ul>
+          
+            </section>
+          </nav>
