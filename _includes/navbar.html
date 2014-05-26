@@ -9,8 +9,8 @@
             <section class="top-bar-section">
               <ul class="right">
             		<li {% if page.title == 'Acceuil' %}class="active"{% endif %}><a href="index.html">Français</a></li>
-            		<li {% if page.url contains 'english' %}class="active"{% endif %}><a href="english.html">English</a></li>
-            		<li {% if page.url contains 'chat' %}class="active"{% endif %}><a href="chat.html">Chat</a></li>
+            		<li {% if page.title == 'English' %}class="active"{% endif %}><a href="english.html">English</a></li>
+            		<li {% if page.title === 'Chat' %}class="active"{% endif %}><a href="chat.html">Chat</a></li>
               </ul>
           
             </section>
