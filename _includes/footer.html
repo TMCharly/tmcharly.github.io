@@ -12,8 +12,7 @@
             </p>
         </div>
         <div class="large-3 medium-4 columns">
-            <h3>Voir mes videos :</h3>
-
+            <p>Le créateur du site est <a href="//cedced19.github.io">cedced19</a> !</p>
         </div>
         {% endif %}
         {% if page.class == 'english' %}
@@ -29,8 +28,18 @@
             </p>
         </div>
         <div class="large-3 medium-4 columns">
-            <h3></h3>
-            
+            <p>The creator of the site is <a href="//cedced19.github.io">cedced19</a> !</p>
+        </div>
+        {% endif %}
+        {% if page.class == 'post' %}
+        <div class="large-9 medium-8 columns">
+            <h3>Partager :</h3>
+            <p>
+                <a href="http://twitter.com/share?text=&ldquo;{{ page.title }}&rdquo; by @TMCharly :" title="Twitter"  class="small radius button">Twitter</a>
+            </p>
+        </div>
+        <div class="large-3 medium-4 columns">
+            <p>Le créateur du site est <a href="//cedced19.github.io">cedced19</a> !</p>
         </div>
         {% endif %}
         </div>
