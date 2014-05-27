@@ -1,0 +1,7 @@
+<url>
+        <loc>http://cedced19.github.io{{include.entry.url}}</loc>
+        <changefreq>monthly</changefreq>
+         {% if include.entry.priority %}
+        <priority>{{include.entry.priority}}</priority>
+        {% endif %}
+</url>
