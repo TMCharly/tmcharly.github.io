@@ -6,7 +6,17 @@
   <body>
 	{% include navbar.html %}
 	
+	{% if page.class == 'post' %}
+	<div class="row">
+        <div class="large-12 columns">
+	{% endif %}
+	
 	{{ content }}
+        
+        {% if page.class == 'post' %}
+	</div>
+        </div>
+	{% endif %}
         
         {% include footer.html %}
         {% include scripts.html %}
