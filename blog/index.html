@@ -8,6 +8,7 @@ title: Blog
   <div class="row">
         <div class="large-12 columns">
           <h1>Blog Posts</h1>
+          <hr>
             {% for post in site.posts %}
               {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
               {% if year == "2014" %}
