@@ -4,3 +4,4 @@ url: tmcharly.github.io
 lsi: false
 exclude: [ README.md]
 markdown: kramdown
+permalink: /blog/:year/:month/:title/
