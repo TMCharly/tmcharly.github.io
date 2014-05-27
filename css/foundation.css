@@ -2361,7 +2361,8 @@ div.switch {
       height: 14px;
       border: solid 4px white;
       border-top: none;
-      border-bottom: none; }
+      border-bottom: none;
+      visibility:hidden; }
     .orbit-container .orbit-timer.paused > span {
       right: -4px;
       top: 0px;
@@ -2374,7 +2375,8 @@ div.switch {
       -ms-transform: rotate(180deg);
       -o-transform: rotate(180deg);
       transform: rotate(180deg);
-      border-color: transparent white transparent transparent; }
+      border-color: transparent white transparent transparent;
+      visibility:hidden; }
       .orbit-container .orbit-timer.paused > span.dark {
         border-color: transparent #333333 transparent transparent; }
   .orbit-container:hover .orbit-timer > span {
