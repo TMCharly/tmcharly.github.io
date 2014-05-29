@@ -5,4 +5,3 @@ lsi: false
 exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
-lastvideo: sHeRLnqJHSQ
