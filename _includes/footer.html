@@ -12,7 +12,10 @@
             </p>
         </div>
         <div class="large-3 medium-4 columns">
-            <p>Le créateur du site est <a href="//cedced19.github.io">cedced19</a> !</p>
+        {% if page.title != 'Accueil' %}
+            <h3>Dernière vidéo</h3>
+            {% include lastvideo.html %}
+        {% endif %}
         </div>
         {% endif %}
         {% if page.class == 'english' %}
@@ -28,7 +31,10 @@
             </p>
         </div>
         <div class="large-3 medium-4 columns">
-            <p>The creator of the site is <a href="//cedced19.github.io">cedced19</a> !</p>
+        {% if page.title != 'Home' %}
+            <h3>Last video</h3>
+            {% include lastvideo.html %}
+        {% endif %}
         </div>
         {% endif %}
         {% if page.class == 'post' %}
@@ -39,7 +45,8 @@
             </p>
         </div>
         <div class="large-3 medium-4 columns">
-            <p>Le créateur du site est <a href="//cedced19.github.io">cedced19</a> !</p>
+            <h3>Dernière vidéo</h3>
+            {% include lastvideo.html %}
         </div>
         {% endif %}
         </div>
