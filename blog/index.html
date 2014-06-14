@@ -10,6 +10,7 @@ footer: true
 
 <h1>Blog Posts</h1>
 <hr>
+<div class="blog">
 {% for post in site.posts %}
       {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
       {% if year == "2014" %}
@@ -18,3 +19,4 @@ footer: true
               <br>
       {% endif %}
 {% endfor %}
+</div>
