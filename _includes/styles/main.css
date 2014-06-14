@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 140%;
+  line-height: 1.5em;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+#progressbar-container {
+  position: fixed;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#progressbar {
+  position: relative;
+  height: 100%;
+  width: 0%;
+  background-color: #2ecc71;
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+#progressbar-elements {
+  visibility: hidden;
+  display: none;
+}
+nav {
+  width: 100%;
+  height: 35px;
+  background: #27ae60;
+  font-size: 9px;
+}
+ul {
+  list-style-type: none;
+  height: 100%;
+  text-align: left !important;
+}
+li {
+  display: inline;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  height: 100%;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 630px) {
+  nav {
+    visibility: hidden;
+    display: none;
+  }
+}
+li:active,
+li:hover,
+li.active {
+  background-color: #fff;
+  color: #27ae60;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a {
+  color: inherit;
+}
+div.carousel {
+  visibility: hidden;
+  display: none;
+}
+div.carousel img {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  display: block;
+  height: 300px;
+  padding: 15px 15px 15px 15px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 33.33333%;
+}
+div.carousel img.max:hover {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  display: block;
+  height: 600px;
+  padding: 15px 15px 15px 15px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 66%;
+}
+@media screen and (min-width: 1500px) {
+  div.carousel {
+    visibility: visible;
+    display: block;
+  }
+}
+b,
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-weight: 350;
+}
+h1 {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1.75em;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+h3,
+.h3 {
+  font-size: 1em;
+  font-family: "futura-pt", sans-serif;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?35029412");
+  src: url("../font/fontello.eot?35029412#iefix") format('embedded-opentype'), url("../font/fontello.woff?35029412") format('woff'), url("../font/fontello.ttf?35029412") format('truetype'), url("../font/fontello.svg?35029412#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio&:0) {
+  @font-face  font-family 'fontello' {
+    src: url("../font/fontello.svg?35029412#fontello") format('svg');
+  }
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+}
+.icon-facebook {
+  color: #2980b9;
+}
+.icon-facebook:before {
+  content: '\e800';
+}
+.icon-gplus {
+  color: #e74c3c;
+}
+.icon-gplus:before {
+  content: '\e801';
+}
+.icon-twitter {
+  color: #3498db;
+}
+.icon-twitter:before {
+  content: '\e802';
+}
+.icon-youtube-play {
+  color: #f00;
+}
+.icon-youtube-play:before {
+  content: '\e803';
+}

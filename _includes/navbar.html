@@ -1,24 +1,6 @@
-            <div class="fixed">
-                        <nav class="top-bar" data-topbar>
-                                    <ul class="title-area">
-                                      <li class="name">
-                                        <h1><a href="/">TMCharly</a></h1>
-                                      </li>
-                                      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-                                    </ul>
-                                    <section class="top-bar-section">
-                                      <ul class="right">
-                                    		<li {% if page.title == 'Acceuil' %}class="active"{% endif %}><a href="//tmcharly.github.io/index.html">Acceuil</a></li>
-                                    		<li {% if page.title == 'Chat' %}class="active"{% endif %}><a href="//tmcharly.github.io/chat">Chat</a></li>
-                                    		<li {% if page.title == 'Blog' %}class="active"{% endif %}{% if page.class == 'post' %}class="active"{% endif %}><a href="//tmcharly.github.io/blog">Blog</a></li>
-                                    		<li class="has-dropdown {% if page.title == 'Home' %}active{% endif %}{% if page.title == 'Chat EN' %}active{% endif %}">
-                                                            <a href="//tmcharly.github.io/english">English</a>
-                                                                    <ul class="dropdown">
-                                                                    <li><a href="//tmcharly.github.io/english">Home</a></li>
-                                                                      <li><a href="//tmcharly.github.io/english/chat">Chat</a></li>
-                                                                    </ul>
-                                                            </li>
-                                      </ul>
-                                    </section>
-                      </nav>
-            </div>
+<nav>
+      <ul>
+        <li {% if page.title == 'Acceuil' %}class="active"{% endif %}a href="#" class="menu">Acceuil</a></li>
+        <li {% if page.title == 'Blog' %}class="active"{% endif %}><a href="/blog/" class="menu">Blog</a></li>
+      </ul>
+</nav>

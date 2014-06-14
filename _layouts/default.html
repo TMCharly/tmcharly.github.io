@@ -5,22 +5,15 @@
   </head>
   <body>
 	{% include navbar.html %}
-	
+
 	{% if page.class == 'post' %}
-	<div class="row">
-        	<div class="large-12 columns">
-			<h1>{{ page.title }}</h1>
-			<p><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-			<hr>
+	<h1>{{ page.title }}</h1>
+	<p><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+	<hr>
 	{% endif %}
-	
+
 	{{ content }}
-        
-        {% if page.class == 'post' %}
-		</div>
-        </div>
-	{% endif %}
-        
+
         {% include footer.html %}
         {% include scripts.html %}
   </body>
