@@ -14,7 +14,12 @@
 
 	{{ content }}
 
+	{% if page.footer == true %}
         {% include footer.html %}
+        {% endif %}
+        
+        {% if page.title == 'Acceuil' %}
         {% include scripts.html %}
+        {% endif %}
   </body>
 </html>
