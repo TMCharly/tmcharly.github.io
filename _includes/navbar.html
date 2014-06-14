@@ -1,6 +1,6 @@
 <nav>
       <ul>
-        <li class="menu {% if page.title == 'Acceuil' %}active{% endif %}"><a href="#" class="menu">Acceuil</a></li>
-        <li class="menu {% if page.title == 'Blog' %}active{% endif %}"><a href="/blog/" class="menu">Blog</a></li>
+        <li class="{% if page.title == 'Acceuil' %}active{% endif %}"><a href="#" class="menu">Acceuil</a></li>
+        <li class="{% if page.title == 'Blog' %}active{% endif %}"><a href="/blog/" class="menu">Blog</a></li>
       </ul>
 </nav>
