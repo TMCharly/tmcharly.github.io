@@ -1,8 +1,8 @@
 <nav>
       <ul>
-        {% if page.class == 'french' %}<li class="active"><a href="/" class="menu">Acceuil</a></li>{% endif %}
-        {% if page.class == 'french' %}<li class=""><a href="/english/" class="menu">English</a></li>{% endif %}
-        {% if page.class == 'english' %}<li class="active"><a href="/english/" class="menu">Home</a></li>{% endif %}
-        {% if page.class == 'english' %}<li class=""><a href="/" class="menu">Français</a></li>{% endif %}
+         {% if page.class == 'french' %}<li class="active menu"><a href="/" class="menu">Acceuil</a></li>
+                                        <li class="menu"><a href="/english/" class="menu">English</a></li>{% endif %}
+        {% if page.class == 'english' %}<li class="active menu"><a href="/english/" class="menu">Home</a></li>
+                                        <li class="menu"><a href="/" class="menu">Français</a></li>{% endif %}
       </ul>
 </nav>
