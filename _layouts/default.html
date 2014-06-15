@@ -5,6 +5,10 @@
   </head>
   <body>
 	{% include navbar.html %}
+	
+	{% if page.class == 'post' %}
+        <h1>{{ post.title }}</h1>
+        {% endif %}
 
 	{{ content }}
 
