@@ -6,3 +6,4 @@ exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
 title: TMCharly
+author: TMCharly

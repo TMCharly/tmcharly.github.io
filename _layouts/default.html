@@ -5,7 +5,7 @@
   </head>
   <body>
 	{% include navbar.html %}
-	
+
 	{% if page.class == 'post' %}
 		{% if page.title != 'Blog' %}
 		<h1 class="h3">{{ page.title }}</h1>
@@ -16,12 +16,12 @@
 
 	{{ content }}
 
-	{% if page.footer == true %}
-	<br>
-	<hr>
+        {% if page.footer == true %}
         {% include footer.html %}
         {% endif %}
-        
+
+        {% if page.img == true %}
         {% include scripts.html %}
+        {% endif %}
   </body>
 </html>
