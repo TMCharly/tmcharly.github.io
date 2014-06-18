@@ -5,5 +5,11 @@ lsi: false
 exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
+
+#Other
 title: TMCharly
 author: TMCharly
+twitter: TMCharly
+googleplus: 114383072832945463624
+youtube: Charly25873
+facebook: tm.charly
