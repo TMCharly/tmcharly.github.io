@@ -6,10 +6,11 @@ exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
 
-#Other
+#Meta
 title: TMCharly
 author: TMCharly
 twitter: TMCharly
 googleplus: 114383072832945463624
 youtube: Charly25873
 facebook: tm.charly
+description: Venez ici pour voir nos créations TrackMania !
