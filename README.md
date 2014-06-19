@@ -2,9 +2,24 @@
 
 Come [here](http://tmcharly.github.io) to see our TM creations!
 
-![](http://tmcharly.github.io/img/favicon.png)
+##Design: Powered by Generator Jadestyl
+
+To install generator-jadestyl from npm, run:
+
+```bash
+$ npm install -g generator-jadestyl
+```
+
+Finally, initiate the generator:
+
+```bash
+$ yo jadestyl
+```
 
 ##JS
 
-Replacer éventuellement `<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
-par `<script type="text/javascript" src="/js/vendor/jquery.js"></script>`
+Replace if necessary `<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
+by `<script type="text/javascript" src="/js/vendor/jquery.js"></script>`
+
+![](http://tmcharly.github.io/img/favicon.png)
+
