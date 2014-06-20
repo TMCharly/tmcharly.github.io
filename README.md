@@ -4,6 +4,8 @@ Come [here](http://tmcharly.github.io) to see our TM creations!
 
 ##Design: Powered by Generator Jadestyl
 
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 To install generator-jadestyl from npm, run:
 
 ```bash
