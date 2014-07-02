@@ -7,18 +7,21 @@
 	{% include navbar.html %}
 
         {% if page.class == 'post' %}
-          <main class="content-warp" role="main">
+      	{% if page.title != 'Blog' %}
+                <main class="content-warp" role="main">
                 {% if page.title != 'Blog' %}
       		<h1 class="h3">{{ page.title }}</h1>
       		<p class="post-time"><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
       		<br>
-      	     {% endif %}
+      	{% endif %}
         {% endif %}
 
         {{ content }}
 
         {% if page.class == 'post' %}
+          {% if page.title != 'Blog' %}
         </main>
+          {% endif %}
         {% endif %}
 
 
