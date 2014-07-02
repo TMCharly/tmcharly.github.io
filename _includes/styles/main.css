@@ -77,6 +77,12 @@ a.menu {
   cursor: pointer;
   font-size: inherit !important;
 }
+.content-warp {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 30em;
+  text-align: left;
+}
 a.social {
   border-bottom: 0px dotted #fff !important;
   font-size: 50px !important;
