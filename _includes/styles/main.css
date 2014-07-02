@@ -196,6 +196,9 @@ span a {
   font-size: inherit !important;
   font-weight: inherit;
 }
+.animate li {
+  display: block;
+}
 @font-face {
   font-family: 'fontello';
   src: url("//tmcharly.github.io/font/fontello.eot?35029412");
