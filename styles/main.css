@@ -91,9 +91,7 @@ div.show div.hover {
   height: 300px;
 }
 div.show {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
   cursor: pointer;
 }
 div.show div.hover {
@@ -136,345 +134,65 @@ div.showed img.other {
     font-size: 2em;
   }
 }
-@-moz-keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translateX(100%) skewX(-30deg);
-    -moz-transform: translateX(100%) skewX(-30deg);
-    -o-transform: translateX(100%) skewX(-30deg);
-    -ms-transform: translateX(100%) skewX(-30deg);
-    transform: translateX(100%) skewX(-30deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-
-  60% {
-    -webkit-transform: translateX(-20%) skewX(30deg);
-    -moz-transform: translateX(-20%) skewX(30deg);
-    -o-transform: translateX(-20%) skewX(30deg);
-    -ms-transform: translateX(-20%) skewX(30deg);
-    transform: translateX(-20%) skewX(30deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  80% {
-    -webkit-transform: translateX(0%) skewX(-15deg);
-    -moz-transform: translateX(0%) skewX(-15deg);
-    -o-transform: translateX(0%) skewX(-15deg);
-    -ms-transform: translateX(0%) skewX(-15deg);
-    transform: translateX(0%) skewX(-15deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  100% {
-    -webkit-transform: translateX(0%) skewX(0deg);
-    -moz-transform: translateX(0%) skewX(0deg);
-    -o-transform: translateX(0%) skewX(0deg);
-    -ms-transform: translateX(0%) skewX(0deg);
-    transform: translateX(0%) skewX(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+@font-face {
+  font-family: 'social';
+  src: url("../font/social.eot?37486659");
+  src: url("../font/social.eot?37486659#iefix") format('embedded-opentype'), url("../font/social.woff?37486659") format('woff'), url("../font/social.ttf?37486659") format('truetype'), url("../font/social.svg?37486659#social") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social';
+    src: url("../font/social.svg?37486659#social") format('svg');
   }
 }
-@-webkit-keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translateX(100%) skewX(-30deg);
-    -moz-transform: translateX(100%) skewX(-30deg);
-    -o-transform: translateX(100%) skewX(-30deg);
-    -ms-transform: translateX(100%) skewX(-30deg);
-    transform: translateX(100%) skewX(-30deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-
-  60% {
-    -webkit-transform: translateX(-20%) skewX(30deg);
-    -moz-transform: translateX(-20%) skewX(30deg);
-    -o-transform: translateX(-20%) skewX(30deg);
-    -ms-transform: translateX(-20%) skewX(30deg);
-    transform: translateX(-20%) skewX(30deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  80% {
-    -webkit-transform: translateX(0%) skewX(-15deg);
-    -moz-transform: translateX(0%) skewX(-15deg);
-    -o-transform: translateX(0%) skewX(-15deg);
-    -ms-transform: translateX(0%) skewX(-15deg);
-    transform: translateX(0%) skewX(-15deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  100% {
-    -webkit-transform: translateX(0%) skewX(0deg);
-    -moz-transform: translateX(0%) skewX(0deg);
-    -o-transform: translateX(0%) skewX(0deg);
-    -ms-transform: translateX(0%) skewX(0deg);
-    transform: translateX(0%) skewX(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
 }
-@-o-keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translateX(100%) skewX(-30deg);
-    -moz-transform: translateX(100%) skewX(-30deg);
-    -o-transform: translateX(100%) skewX(-30deg);
-    -ms-transform: translateX(100%) skewX(-30deg);
-    transform: translateX(100%) skewX(-30deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-
-  60% {
-    -webkit-transform: translateX(-20%) skewX(30deg);
-    -moz-transform: translateX(-20%) skewX(30deg);
-    -o-transform: translateX(-20%) skewX(30deg);
-    -ms-transform: translateX(-20%) skewX(30deg);
-    transform: translateX(-20%) skewX(30deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  80% {
-    -webkit-transform: translateX(0%) skewX(-15deg);
-    -moz-transform: translateX(0%) skewX(-15deg);
-    -o-transform: translateX(0%) skewX(-15deg);
-    -ms-transform: translateX(0%) skewX(-15deg);
-    transform: translateX(0%) skewX(-15deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  100% {
-    -webkit-transform: translateX(0%) skewX(0deg);
-    -moz-transform: translateX(0%) skewX(0deg);
-    -o-transform: translateX(0%) skewX(0deg);
-    -ms-transform: translateX(0%) skewX(0deg);
-    transform: translateX(0%) skewX(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
+.icon-facebook:before {
+  content: '\e800';
 }
-@-ms-keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translateX(100%) skewX(-30deg);
-    -moz-transform: translateX(100%) skewX(-30deg);
-    -o-transform: translateX(100%) skewX(-30deg);
-    -ms-transform: translateX(100%) skewX(-30deg);
-    transform: translateX(100%) skewX(-30deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-
-  60% {
-    -webkit-transform: translateX(-20%) skewX(30deg);
-    -moz-transform: translateX(-20%) skewX(30deg);
-    -o-transform: translateX(-20%) skewX(30deg);
-    -ms-transform: translateX(-20%) skewX(30deg);
-    transform: translateX(-20%) skewX(30deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  80% {
-    -webkit-transform: translateX(0%) skewX(-15deg);
-    -moz-transform: translateX(0%) skewX(-15deg);
-    -o-transform: translateX(0%) skewX(-15deg);
-    -ms-transform: translateX(0%) skewX(-15deg);
-    transform: translateX(0%) skewX(-15deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  100% {
-    -webkit-transform: translateX(0%) skewX(0deg);
-    -moz-transform: translateX(0%) skewX(0deg);
-    -o-transform: translateX(0%) skewX(0deg);
-    -ms-transform: translateX(0%) skewX(0deg);
-    transform: translateX(0%) skewX(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
+.icon-youtube:before {
+  content: '\e801';
 }
-@keyframes lightSpeedIn {
-  0% {
-    -webkit-transform: translateX(100%) skewX(-30deg);
-    -moz-transform: translateX(100%) skewX(-30deg);
-    -o-transform: translateX(100%) skewX(-30deg);
-    -ms-transform: translateX(100%) skewX(-30deg);
-    transform: translateX(100%) skewX(-30deg);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-
-  60% {
-    -webkit-transform: translateX(-20%) skewX(30deg);
-    -moz-transform: translateX(-20%) skewX(30deg);
-    -o-transform: translateX(-20%) skewX(30deg);
-    -ms-transform: translateX(-20%) skewX(30deg);
-    transform: translateX(-20%) skewX(30deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  80% {
-    -webkit-transform: translateX(0%) skewX(-15deg);
-    -moz-transform: translateX(0%) skewX(-15deg);
-    -o-transform: translateX(0%) skewX(-15deg);
-    -ms-transform: translateX(0%) skewX(-15deg);
-    transform: translateX(0%) skewX(-15deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-
-  100% {
-    -webkit-transform: translateX(0%) skewX(0deg);
-    -moz-transform: translateX(0%) skewX(0deg);
-    -o-transform: translateX(0%) skewX(0deg);
-    -ms-transform: translateX(0%) skewX(0deg);
-    transform: translateX(0%) skewX(0deg);
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
+.icon-gplus:before {
+  content: '\e802';
 }
-@-moz-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.icon-camera:before {
+  content: '\e803';
 }
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.icon-twitter:before {
+  content: '\e804';
 }
-@-o-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.icon-facebook:hover {
+  color: #084166;
 }
-@-ms-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.icon-youtube:hover {
+  color: #c0392b;
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.icon-twitter:hover {
+  color: #2980b9;
+}
+.icon-gplus:hover {
+  color: #c0392b;
+}
+.icon-camera {
+  font-size: 75px;
+  color: rgba(44,62,80,0.8);
 }
 @-moz-keyframes flipInX {
   0% {
