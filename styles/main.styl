@@ -1,0 +1,183 @@
+@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
+
+// variables!
+
+body_color = #fff
+body_selection = #42d17f
+body_background = #27ae60
+
+
+// base
+
+body
+  font-family: helvetica, arial, sans-serif
+  font-size: 18px
+  color: body_color
+  background-color: body_background
+
+::selection
+   background-color: body_selection
+   color: body_color
+
+hr
+  visibility: hidden
+  height: 20px
+
+ul
+  list-style: none
+
+li
+  margin-bottom: 12px
+
+p
+  margin: 0 100px 12px
+  line-height: 22px
+
+a
+  text-decoration: none
+  color: #fff
+
+.content-warp
+  margin: 0 auto
+  padding: 2em
+  max-width: 30em
+  animation-timing-function: ease-out
+  animation-duration: 1s
+  animation-fill-mode: both
+  backface-visibility: visible !important
+  animation-name: flipInX
+
+h1,h2,h3,h4,h5,h6
+ position:relative
+ margin:1em 0
+ text-align:center
+ text-transform:uppercase
+ letter-spacing:.125em
+ font-weight:700
+
+h1
+ font-size:2em
+ margin:0.67em 0
+
+h1.title
+   font-size: 5em
+
+
+h3
+  font-size: 2em
+
+// Pictures
+div.show
+  position: relative
+  height: 300px
+
+div.show img.logo, div.show div.hover
+  position: absolute
+  border-radius: 150px
+  width: 300px
+  height: 300px
+
+div.show
+  width: 50%
+  margin-left: auto
+  margin-right: auto
+  cursor: pointer
+
+div.show div.hover
+  display: none
+  height: 200px
+  padding-top: 100px
+  background-color: rgba(189, 195, 199,0.5)
+  text-align: center
+  z-index:10
+
+div.showed img.other
+    border-radius: 30px
+    display: block
+    height: 300px
+    padding: 15px 15px 15px 15px
+    position: relative
+    min-height: 1px
+    width: 500px
+
+
+@media screen and (max-width: 600px)
+    div.pictures
+        display: none
+
+
+
+// Other
+.social
+  font-size: 3em
+  text-align: center
+
+@media screen and (max-width: 600px)
+ h1,h2,h3,h4,h5,h6
+  margin:2em 0
+
+ h1.title
+  font-size: 2em
+
+  // Animate
+
+@keyframes lightSpeedIn {
+  0% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
