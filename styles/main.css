@@ -102,7 +102,7 @@ div.show div.hover {
   text-align: center;
   z-index: 10;
 }
-div.showed img.other {
+div.showed img {
   -webkit-border-radius: 30px;
   border-radius: 30px;
   display: block;
