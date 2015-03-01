@@ -1,27 +1,17 @@
-#TMCharly.github.io
+# TMCharly
+> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
-Come [here](http://tmcharly.github.io) to see our TM creations!
+## View slides locally
 
-##Pictures
+First, ensure you have the following installed:
 
-The list of pictures is on `/images.json`
+1. [Node.js](http://nodejs.org)
+2. [Bower](http://bower.io): `$ npm install -g bower`
+3. [Gulp](http://gulpjs.com): `$ npm install -g gulp`
 
-##Design: Powered by Generator Jadestyl
-
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
-To install generator-jadestyl from npm, run:
-
-```bash
-$ npm install -g generator-jadestyl
-```
-
-Finally, initiate the generator:
+Then, install dependencies and run the preview server:
 
 ```bash
-$ yo jadestyl
+$ npm install && bower install
+$ gulp serve
 ```
-
-
-![](http://tmcharly.github.io/img/favicon.png)
-

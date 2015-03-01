@@ -1,1 +1,0 @@
-var show=$(".show"),hover=$(".hover");show.hover(function(){hover.css("display","block")},function(){hover.css("display","none")}),hover.click(function(){show.remove();$("<div>").addClass("showed").appendTo(".pictures");$.getJSON("/images.json",function(a){for(var b in a)$("<img>").attr("src",a[b]).appendTo(".showed")})});
